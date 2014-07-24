@@ -359,7 +359,12 @@ class ResourceAdapter extends ObjectAdapter {
                 if ($mode == MODE_REMOVE) {
                     $a->remove();
                 } elseif ($mode == MODE_EXPORT) {
-                    $content = $object->getContent();
+                    //If resource Content Disposition = Attachment save the exact value.
+                    if($fields['content_dispo'] == 1){
+                        $content = $fields['content'];
+                    } else {
+                        $content = $object->getContent();
+                    }
                     $a->createCodeFile(true, $content,  $mode, $dryRun );
                     if (isset($fields['properties']) && !empty($fields['properties'])) {
                         $a->writePropertiesFile($a->getName(), $fields['properties'], MODE_EXPORT);
