@@ -2,7 +2,7 @@
 /**
  * chunks transport file for MyComponent extra
  *
- * Copyright 2012-2013 by Bob Ray <http://bobsguides.com>
+ * Copyright 2012-2014 by Bob Ray <http://bobsguides.com>
  * Created on 06-26-2013
  *
  * @package mycomponent
@@ -353,110 +353,80 @@ $chunks[33] = $modx->newObject('modChunk');
 $chunks[33]->fromArray(array (
   'id' => 33,
   'property_preprocess' => false,
-  'name' => 'cmp.controllerheader.tpl',
+  'name' => 'cmp.controllerhome.tpl',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[33]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.controllerheader.tpl'));
+$chunks[33]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.controllerhome.tpl'));
 
 $chunks[34] = $modx->newObject('modChunk');
 $chunks[34]->fromArray(array (
   'id' => 34,
   'property_preprocess' => false,
-  'name' => 'cmp.controllerhome.tpl',
+  'name' => 'cmp.defaultjs.tpl',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[34]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.controllerhome.tpl'));
+$chunks[34]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.defaultjs.tpl'));
 
 $chunks[35] = $modx->newObject('modChunk');
 $chunks[35]->fromArray(array (
   'id' => 35,
   'property_preprocess' => false,
-  'name' => 'cmp.controllerindex.tpl',
+  'name' => 'cmp.getlist.class.php',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[35]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.controllerindex.tpl'));
+$chunks[35]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.getlist.class.php'));
 
 $chunks[36] = $modx->newObject('modChunk');
 $chunks[36]->fromArray(array (
   'id' => 36,
   'property_preprocess' => false,
-  'name' => 'cmp.controllerrequest.class.php',
+  'name' => 'cmp.grid.tpl',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[36]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.controllerrequest.class.php'));
+$chunks[36]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.grid.tpl'));
 
 $chunks[37] = $modx->newObject('modChunk');
 $chunks[37]->fromArray(array (
   'id' => 37,
   'property_preprocess' => false,
-  'name' => 'cmp.defaultjs.tpl',
+  'name' => 'cmp.home.js.tpl',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[37]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.defaultjs.tpl'));
+$chunks[37]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.home.js.tpl'));
 
 $chunks[38] = $modx->newObject('modChunk');
 $chunks[38]->fromArray(array (
   'id' => 38,
   'property_preprocess' => false,
-  'name' => 'cmp.getlist.class.php',
+  'name' => 'cmp.home.panel.js.tpl',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[38]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.getlist.class.php'));
+$chunks[38]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.home.panel.js.tpl'));
 
 $chunks[39] = $modx->newObject('modChunk');
 $chunks[39]->fromArray(array (
   'id' => 39,
   'property_preprocess' => false,
-  'name' => 'cmp.grid.tpl',
+  'name' => 'cmp.mgr.css.tpl',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[39]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.grid.tpl'));
+$chunks[39]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.mgr.css.tpl'));
 
 $chunks[40] = $modx->newObject('modChunk');
 $chunks[40]->fromArray(array (
   'id' => 40,
   'property_preprocess' => false,
-  'name' => 'cmp.home.js.tpl',
-  'description' => 'Chunk',
-  'properties' => NULL,
-), '', true, true);
-$chunks[40]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.home.js.tpl'));
-
-$chunks[41] = $modx->newObject('modChunk');
-$chunks[41]->fromArray(array (
-  'id' => 41,
-  'property_preprocess' => false,
-  'name' => 'cmp.home.panel.js.tpl',
-  'description' => 'Chunk',
-  'properties' => NULL,
-), '', true, true);
-$chunks[41]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.home.panel.js.tpl'));
-
-$chunks[42] = $modx->newObject('modChunk');
-$chunks[42]->fromArray(array (
-  'id' => 42,
-  'property_preprocess' => false,
-  'name' => 'cmp.mgr.css.tpl',
-  'description' => 'Chunk',
-  'properties' => NULL,
-), '', true, true);
-$chunks[42]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.mgr.css.tpl'));
-
-$chunks[43] = $modx->newObject('modChunk');
-$chunks[43]->fromArray(array (
-  'id' => 43,
-  'property_preprocess' => false,
   'name' => 'cmp.processor.class.php',
   'description' => 'Chunk',
   'properties' => NULL,
 ), '', true, true);
-$chunks[43]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.processor.class.php'));
+$chunks[40]->setContent(file_get_contents($sources['source_core'] . '/elements/chunks/cmp.processor.class.php'));
 
 return $chunks;

@@ -14,7 +14,7 @@ $components = array(
     'authorUrl' => 'http://bobsguides.com',
     'authorSiteName' => "Bob's Guides",
     'packageDocumentationUrl' => 'http://bobsguides.com/example-tutorial.html',
-    'copyright' => '2014',
+    'copyright' => '2013',
 
     /* no need to edit this except to change format */
     'createdon' => strftime('%m-%d-%Y'),
@@ -412,14 +412,10 @@ $components = array(
        (no trailing slash on directory)
        if 'createCmpFiles is true, these will be ignored.
     */
-    'jsFiles' => array(
+    $jsFiles = array(
         'example.js',
     ),
 
-    /* Desired CSS files */
-    'cssfiles' => array(
-        'example.css',
-    ),
 
     /* ********************************************* */
     /* Define basic directories and files to be created in project*/
